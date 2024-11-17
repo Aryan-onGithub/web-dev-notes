@@ -1,0 +1,40 @@
+<!--Box model in CSS-->
+<!-- you can check this when opening inspect in your webpage and going to computed(right handside to styles) -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* using universal selector to change defalult margin and pedding */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            color: green;
+            background-color: rgb(141, 223, 243);
+            padding: 10px;
+            border: 10px solid;
+            border-color: green;
+
+            /* margin collapse: margin can merge with other margins */
+            margin: 10px;
+
+            height: 100px;
+            /* if we not include box-sizing: border-box then only the height of content will increase */
+            box-sizing: border-box;  
+            /* when we include border-box it means total of content+padding+border = height  */    }
+    </style>
+</head>
+
+<body>
+    <div>hello</div>
+    <img src="photo.png" alt="border box model representation">
+    <img src="photo2.png" alt="another representation for better understanding">
+</body>
+
+</html>

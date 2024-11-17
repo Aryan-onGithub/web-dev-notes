@@ -1,0 +1,47 @@
+<!-- 
+5-6 0-5min✅
+6-7 5-12min ✅
+ --> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            background-color: bisque;
+        }
+        div{
+            height: 330px;
+            width: 1800px;
+            border: 2px solid;
+        }
+        
+        @media(max-width: 1000px){
+            body{
+                background-color: aqua;
+            }
+            div{
+                width: 600px ;
+            }
+        }
+        /*➡️ media quary syntex:
+        @media not/only mediatype and (expressions) {CSS-Code; }*/
+        /* media query is used to make responsive designs */
+        @media only screen and (orientation: portrait){
+            div{
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    hello
+    <div>box1</div>
+    <div>box2</div>
+    <div>box3</div>
+</body>
+</html>

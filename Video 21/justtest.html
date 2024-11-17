@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div+class = 11 */
+        div.red{color: red;} 
+        /* class = 10 */
+        .blue{color: blue;}
+
+        /* this shit is stupid as u are checking child */
+        div>p{
+            color: green;
+        }
+        </style>
+</head>
+<body>
+    <div class="red blue"><p>
+        testing
+        </p></div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <video src="video.mp4" controls width="200" autoplay loop muted></video>
+    <video src="video.mp4" width="200" poster="download.jpg" controls></video>
+    <audio src="sachin.mp3" controls preload="auto"></audio>
+    <!--
+        controls= for controling video
+        autoplay
+        loop
+        muted
+        poster = thumbnail
+        width
+        height
+    -->
+    <!--
+    audio have same attrbutes as video, other then this
+
+    preload= if you want the browser to fetch data beforehand
+    values=  none = default
+            ,metadata = only fetch meta data
+            ,auto = fetch enitre audio
+-->
+    <svg height="100" width="100">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+    </svg>
+    <!--use to create high quality sahpes and icon, inline element-->
+    <img src="img.svg" alt="my svg img">
+    <!--
+    if u want to use svg file in image tag please type xmlns="http://www.w3.org/2000/svg" at the start
+-->
+    <iframe src="https://www.codewithharry.com/tutorial/working-with-svg/" frameborder="0" width="800"
+        height="400"></iframe>
+        <!-- iframe can be used to embedd websites to your webpage-->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/XZwBNDGuWGU?si=WudrD9B0KxD2tv3W&amp;start=741" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <!--
+            youtube gives the feature to embed video when you share them and click on embed
+        -->
+    </body>
+
+</html>

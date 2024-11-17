@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css Selectors</title>
+    <style>
+        /* class selector */
+        .red {
+            background-color: red;
+        }
+
+        /* id selector */
+        #green {
+            background-color: green;
+
+            /* child selector */
+        }
+
+        div> article > p{
+            color: blue;
+            }
+        
+        /*  desented selector*/  
+
+            div span{
+                background-color: brown;
+            }
+        
+        /*  universal selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* pseudo selector */
+            /* color after visiting */
+        a:visited{ 
+            color: yellow;
+        }
+            /* color before visiting */
+        a:link{
+            color: green;
+        }
+            /* change background color when clicking link */
+        a:active{
+            background-color: red;
+        }
+            /* change background color when hover over link*/
+        a:hover{
+            background-color: blue;
+
+        }
+            /* do changes to the first child
+                    eg: parent{
+                        <p>firstchild</p>
+                        <p>secondchild</p>
+                    }
+            */
+
+        p:first-child{
+            background-color: pink;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="one">
+        <p>hi</p>
+        <p>aryan</p>
+
+    </div>
+
+    <div class="red">
+        i am a div
+        <article>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum ducimus ea placeat beatae provident
+                delectus quaerat itaque ipsa repellendus iure, minima voluptates a recusandae odit cumque illum. Quaerat,
+                explicabo dicta.
+            </p>
+            <span>
+                hi
+            </span>
+        </article>
+
+    </div>
+
+    <div id="green">
+        aryan
+    </div>
+
+    <div>
+        <a href="https://www.imdb.com/title/tt25405130/">google</a>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+<!--
+1-2✅
+2-3✅
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise 5</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        nav {
+            background-color: aqua;
+
+        }
+    </style>
+    <style>
+        nav>ul {
+            list-style: none;
+            display: flex;
+            padding: 20px;
+
+        }
+
+        ul>li>a {
+            padding: 13px;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 50px;
+
+        }
+
+        .background {
+            background-color: bisque;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            margin: 15px;
+        }
+
+        .box {
+            background-color: red;
+            height: 625px;
+            width: 625px;
+            margin: 20px;
+            display: inline-flex;
+
+        }
+
+        .box:first-child {
+            background-color: blue;
+        }
+
+        .content>div {
+            background-color: deepskyblue;
+            padding: 20px;
+            border: 2px solid grey;
+            border-radius: 80px;
+            width: 1300px;
+            padding: 20px 50px;
+            font-size: 100px;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        footer {
+            background-color: grey;
+            margin-top: 400px;
+            display: flex;
+            justify-content: center;
+            padding: 50px;
+        }
+
+        .nav {
+            margin-top: 10px;
+            position: sticky;
+            top: 0;
+        }
+
+        .logo {
+            position: fixed;
+            left: 1485px;
+            bottom: 4px;
+        }
+
+        img {
+            border: 2px solid;
+            border-radius: 50px;
+            width: 70px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="background">
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div class="content">
+        <div>Welcome to this Sigma Web Development Express</div>
+    </div>
+    <div class="left">
+        <span class="logo">
+            <img src="https://yt3.ggpht.com/Kli-IV3tpwtEapq6BdMPZ_dZg-TC30lVUsIuFWGOWfLTwqb3cuwlMU5WuCUc8-JdpZesg5kxcTQ=s88-c-k-c0x00ffffff-no-rj"
+                alt="">
+        </span>
+        <footer>
+            <div>footer</div>
+
+        </footer>
+</body>
+
+</html>

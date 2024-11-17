@@ -1,0 +1,132 @@
+<!-- 
+15-20 12-1 ✅
+20-25 1-2 ✅
+25-32 2-3 ✅
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>second way of using grid</title>
+    <style>
+        .items {
+            display: grid;
+            grid-template-columns: 90px 90px 90px 90px;
+            grid-template-rows: 60px 60px 60px;
+            /* defining width and height of column and row */
+
+            grid-template-areas: "nav  nav  nav   nav"
+                "main main empty sidebar"
+                "footer footer footer footer";
+            /* defining cells with names */
+        }
+
+        .item-1 {
+            background-color: palevioletred;
+            grid-area: nav;
+            /* using cell names of positioning */
+        }
+
+        .item-2 {
+            background-color: rgba(0, 102, 255, 0.349);
+            grid-area: main;
+        }
+
+        .item-3 {
+            background-color: rgba(89, 255, 47, 0.61);
+            grid-area: empty;
+        }
+
+        .item-4 {
+            background-color: rgba(211, 211, 66, 0.671);
+            grid-area: sidebar;
+        }
+
+        .item-5 {
+            background-color: rgba(177, 32, 32, 0.733);
+            grid-area: footer;
+        }
+
+        .item-6 {
+            background-color: aqua;
+            /* grid-area: nav; */
+
+            /*➡️this way we can also overlap items */
+        }
+
+
+
+
+        .items2 {
+            border: 2px solid;
+            display: grid;
+            width: 400px;
+            height: 400px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            /* we can also set wigth height seperatoly then use unit fr(fraction) to determin the space taken by each cell from the total allowed */
+
+            /* in the aboue example each cell is takin 1/3 fraction of the total width and height */
+          
+            /* or */
+            grid-template-rows: repeat(3, 1fr);
+            /* can be used if we want to make many rows/columns */
+            /* or */
+            grid-template-rows: repeat(3, minmax(100, 1fr));
+            /* this way we can specify the min and max width/height of column/row */
+
+
+            column-gap: 30px;
+            row-gap: 20px;
+            /* this way we can set column and row gap */
+
+            justify-items: center;
+            align-items: center;
+            /* this way we can alight items horizontally and verticaly in grid 
+            */
+
+            /* we can also use this for justify-content/ align-content, but the container should me large enough from the grid inside it to mave around */
+
+            place-content: center;
+            /* to align content center horizontally and virticaly */
+        }
+
+        .item2of2{
+            align-self: start;
+            /* this way we can self align items too */
+        }
+
+        .items2>div {
+            border: 2px solid red;
+            height: 80px;
+            width: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="img.png" alt="grid template areas">
+    <div class="items">
+        <div class="item item-1">navigation bar</div>
+        <div class="item item-2">main content</div>
+        <div class="item item-3">empty</div>
+        <div class="item item-4">sidebar</div>
+        <div class="item item-5">footer</div>
+        <div class="item item-6">footer</div>
+
+    </div>
+
+    <div class="items2">
+        <div class="item ">navigation bar</div>
+        <div class="item item2of2">main content</div>
+        <div class="item ">empty</div>
+        <div class="item ">sidebar</div>
+        <div class="item ">footer</div>
+
+    </div>
+</body>
+
+</html>

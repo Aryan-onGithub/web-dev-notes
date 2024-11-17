@@ -1,0 +1,41 @@
+<!-- 
+8-9 0-5min✅
+9-10 5-8min ✅
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: aqua;
+            border: 2px solid;
+            width: 50vw;
+            height:30vh;
+            /* overflow:scroll; */
+            /*➡️ if there is no overflow then also the scroll bar will be their, so we use auto */
+            /* overflow: auto; */
+            overflow: hidden;
+            /*hides the overflown text*/
+            text-overflow: ellipsis;
+              /* used to make dots for the overflow text */
+            /* ⭐ ellipsis won't work broperly if white-space comes before text-overflow */
+            white-space: nowrap;
+            /* ➡️all text will fall in single line */
+            overflow-x: hidden;
+            /* hides overflow on x axis */
+            overflow-y: scroll;
+            /* or write like this for x y */
+            overflow: hidden scroll;
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        adandodoqn Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci tempore repellat a consectetur.
+    </div>
+</body>
+</html>

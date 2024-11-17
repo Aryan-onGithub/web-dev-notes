@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>percent</title>
+    <style>
+        *{margin: 0cm;}
+        .one{
+            background-color:aqua;
+            border: 2px solid;
+            width: 80vw;
+        }
+
+        .one > div{
+            width: 50%;
+            border: 2px solid;
+        }
+
+        .one >div > div{
+            width: 50%;
+            border: 2px solid;
+        }
+        /* here each width is the 50% width of its parent  */
+    </style>
+</head>
+<body>
+    persent unit can be used if you have a parent
+    for eg: div1 is a parent of div2, and div2 is a parent of div3
+
+    <div class="one">
+        div1
+        <div>
+            div2
+            <div>
+                div3
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

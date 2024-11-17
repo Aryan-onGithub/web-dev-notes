@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 23px;
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 45px;
+            width: 45px;
+            border: 2px solid black; 
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        Given 5 boxes, Assign a random color and a random background to each box using DOM concepts
+     -->
+     <div class="container">
+        <div class="box">Box</div>
+        <div class="box">Box</div>
+        <div id="three" class="box">Box</div>
+        <div class="box">Box</div>
+        <div class="box">Box</div>
+     </div>
+
+     <script>
+const randomHexColorCode = () => {
+    let n = (Math.random() * 0xfffff * 1000000).toString(16);
+    return '#' + n.slice(0, 6);
+  };
+randomHexColorCode()
+
+let boxes = document.body.getElementsByClassName("box")
+
+boxes[1].style.backgroundColor= randomHexColorCode()
+document.body.children[0].firstElementChild.style.backgroundColor= randomHexColorCode()
+document.getElementById("three").style.backgroundColor= randomHexColorCode()
+document.body.children[0].lastElementChild.style.backgroundColor= randomHexColorCode()
+document.body.firstElementChild.children[3].style.backgroundColor= 
+document.body.children[0].firstElementChild.style.backgroundColor= randomHexColorCode()
+     </script>
+</body>
+</html>

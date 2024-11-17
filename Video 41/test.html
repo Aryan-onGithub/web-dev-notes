@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Navbar Using Flexbox</title>
+    <style>
+        *{
+            /* background-color: rgb(233, 226, 226); */
+            margin: 0px;
+            padding: 0px;
+        }
+        nav{
+            background-color: rgb(255, 255, 255);
+            height: 60px;
+            /* display: flex; */
+            /* justify-content: right; */
+        }
+        ul li{
+            display: inline;
+            padding:  20px;
+        }
+        ul li:hover{
+            color: grey;
+        }
+        ul li:nth-child(1){
+            position: relative;
+            left: 20px;
+            /* margin: 20px; */
+            padding: 40px 20px;
+
+        }
+        ul li:nth-child(2){
+            position: relative;
+            left: 590px;
+            margin: 20px;
+            padding: 20px;
+        }
+        ul li:nth-child(3){
+            position: relative;
+            left: 555px;
+        }
+        ul li:nth-child(4){
+            position: relative;
+            left: 530px;
+        }
+        ul li:nth-child(5){
+            position: relative;
+            left: 507px;
+        }
+        ul li:nth-child(6){
+            position: relative;
+            left: 480px;
+        }
+        ul li:nth-child(7){
+            position: relative;
+            left: 475px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <main>
+            <nav>
+                <ul>
+                    <li><img src="logo.webp" height="60px" width="160px" alt=""></li>
+                    <li>Products ^</li>
+                    <li>Pricing ^</li>
+                    <li>Resources ^</li>
+                    <li>About us ^</li>
+                    <li>Security and compliance</li>
+                    <li><a href="https://www.ultraedit.com/downloads/ultraedit-download-thank-you/" target="_blank"><img src="translate.webp" height="20px" width="25px" alt=""></a></li>
+                </ul>
+            </nav>
+        </main>
+    </header>
+</body>
+</html>

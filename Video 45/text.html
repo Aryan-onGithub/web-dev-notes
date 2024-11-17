@@ -1,0 +1,51 @@
+<!-- 
+0-5✅
+5-14 ✅
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+
+.container{
+    height: 30vh;
+    width: 30vw;
+    background-color: aqua;
+}
+
+.box{
+    height: 30%;
+    width: 30%;
+    background-color:red;
+    transition-property: transform;
+    /* property is used on transform class 
+       for applying this to a specific property*/
+    transition-property: all;
+    /* for applying this to all property */
+    /* or */
+    transition-property: transform, background-color;
+    /* for multiple propertys */
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    /* way of transition */
+    transition-delay: 200ms;
+
+    /* or we can combine all propertys */
+    transition: all 1s ease-in-out 200ms;
+}
+.transform{
+    transform: translateX(130%) translateY(100%) scale(2);
+    background-color: blue;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box transform"></div>
+    </div>
+</body>
+</html>

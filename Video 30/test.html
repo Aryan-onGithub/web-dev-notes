@@ -1,0 +1,49 @@
+<!-- 
+3-4 0-5min✅
+4-5 5-13min✅
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --color: blue;
+            /* ➡️globle variable */
+            /* define variable --name: value; */
+            --seccolor: orange;
+            --defpad: 23px;
+            --defop: .7;
+/* css variable can hold values like background, number, strings, url, etc. */
+        }
+        .one {
+            background-color: var(--color);
+            /* called a variable */
+            padding: var(--defpad);
+            opacity: var(--defop);
+        }
+.two{
+    --color:purple;
+    /* ➡️local variable */
+    /* override a variable */
+    background-color: var(--color);
+}
+        .three {
+            background-color:var(--seccolor, red)
+            /* ➡️fallback variable
+            if the seccolor variable is not found for some reason, then the alternativ color will be red
+            */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one">box1</div>
+    <div class="two">box2</div>
+    <div class="three">box3</div>
+</body>
+
+</html>

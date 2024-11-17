@@ -1,0 +1,280 @@
+<!-- 
+0-5 12-1✅
+5-10 1-2✅
+10-15 2-3✅
+15-20 3-4✅
+20-28 4-5✅
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container {
+            height: 15cm;
+            border: 2px solid;
+            display: flex;
+            /* aligh content side by side */
+            justify-content: center;
+            /* align content horizontally center */
+            align-items: center;
+            /* align content vertically center */
+            /* their are also ather position we can use like flex start,   flex end */
+        }
+
+        .container2 {
+            display: flex;
+            flex-direction: column-reverse;
+            /* we can use column, column-reverse, row, reow reverse to set flex direction */
+            align-items: center;
+            /* align items made the item center because the axes changed and now the propertys will work oppositely */
+        }
+
+        .container3 {
+            border: 2px solid;
+            height: 15cm;
+            display: flex;
+            flex-wrap: wrap;
+            /* if the content can't fit in single line then it will take another line */
+            align-content: center;
+            /* make the content come in center virtically, align-item won't have the same effect */
+
+            /* ➡️we can use flex-flow: to give felx-direction and flex-wrap at the same time 
+eg: flex-flow:row wrap; 
+but you have to set display flex */
+        }
+
+        .container4 {
+            border: 2px solid;
+            height: 15cm;
+            display: flex;
+            align-content: flex-start;
+            flex-wrap: wrap;
+            gap: 40px;
+            padding: 5px;
+            /* same as margin */
+            row-gap: 12px;
+            column-gap: 5px;
+            /* or use */
+            gap: 13px 5px;
+        }
+
+        .container4>div {
+            margin: 0;
+        }
+
+        .container5 {
+            border: 2px solid;
+            display: flex;
+            height: 15cm;
+            align-items: flex-start;
+        }
+
+        .container6 {
+            border: 2px solid;
+            display: flex;
+            height: 15cm;
+            align-items: flex-start;
+        }
+
+        .container6>div {
+            width: 120px;
+        }
+
+
+        .order-1 {
+            order: 1;
+            /* more the order the further end it goes */
+            /* as other have element have default order 0 so this element goes last */
+        }
+
+
+        .order-2 {
+            order: 2;
+            /* now 2 is the biggest order so this element has gone to last */
+        }
+
+        .container5>div {
+            flex-grow: 1;
+            /* if flex grow of all items in container5 is 0 */
+        }
+
+        #flex-grow {
+            flex-grow: 2;
+            /* now this item will take double the space of other items */
+        }
+
+        #flex-shrink {
+            flex-shrink: 1000;
+            /* now this element will shrink at the speed of 1000x faster then the other irems if we try to shrink the page, TRY IT YOURSELF */
+        }
+
+        .top {
+            align-self: flex-start;
+            /* we can align the elements indevidually */
+        }
+
+        .bottom {
+            align-self: flex-end;
+        }
+
+        .box {
+            width: 40px;
+            height: 40px;
+            background-color: aqua;
+            border: 2px solid;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <div class="container2">
+        <div class="box">start</div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box">end</div>
+    </div>
+
+    <div class="container3">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <div class="container4">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <div class="container4 order">
+        <div class="box order-1">1</div>
+        <div class="box"></div>
+        <div class="box order-2">3</div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <div class="container5">
+        <div class="box" id="flex-grow"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <div class="container6">
+        <div class="box" id="flex-shrink"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <div class="container">
+        <div class="box"></div>
+        <div class="box top"></div>
+        <div class="box"></div>
+        <div class="box "></div>
+        <div class="box bottom"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

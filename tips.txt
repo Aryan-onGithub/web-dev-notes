@@ -1,0 +1,10 @@
+view => word wrap
+ctrl + / => comment selected lines
+
+select and rightclick ➡️change all occerances
+
+tab ➡️ gives indentation
+shift + tab ➡️ takes 1 indentation
+
+HTML- hyper test markup language
+CSS- cascading style sheet

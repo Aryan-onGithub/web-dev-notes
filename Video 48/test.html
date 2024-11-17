@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .main {
+        height: 50vh;
+        width: 100%;
+        background-color: blanchedalmond;
+        position: relative;
+       
+
+    }
+
+    .ball {
+        height: 70px;
+        width: 70px;
+        background-color: rgba(0, 255, 255, 0.507);
+        position: absolute;
+        border-radius: 50%;
+        bottom: 0px;
+
+        animation: ball 5s  linear infinite;
+
+    }
+
+    @keyframes ball {
+        0%{
+            left: 0;
+            bottom: 0;
+        }
+
+        10%{
+            left: 10%;
+            bottom: 60%;
+        }
+        20%{
+            left: 20%;
+            bottom: 0%;
+        }
+
+        35%{
+            left: 30%;
+            bottom: 50%;
+
+        }
+        40%{
+            left: 35%;
+            bottom: 0;
+        }
+        50%{
+            left: 48%;
+            bottom: 40%;
+        }
+
+        70%{
+            left: 58%;
+            bottom: 0%;
+        }
+        100%{
+            left: 65%;
+            bottom: 20%;
+        }
+
+    }
+
+        
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="ball">
+        </div>
+    </div>
+    <!-- 
+   
+     -->
+</body>
+
+</html>

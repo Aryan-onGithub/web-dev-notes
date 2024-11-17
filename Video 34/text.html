@@ -1,0 +1,49 @@
+<!-- 
+0-5  9-10am ✅
+5-11 10-11am ✅
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float and clear</title>
+    <style>
+        .lists{
+            border: 2px solid;
+            display: flow-root;
+            /* we use display flow root to make our image come inside, otherwise it was overflowing */
+        }
+        img{
+            float: right;
+            /* with float left other element go towards right instead of startig from below */
+        }
+        .list{
+            border: 2px solid red;
+            display: flex;
+           
+        }
+.clean{
+    background-color: aqua;
+clear: right;
+/* no element will take space toward right side */
+}
+    </style>
+ </head>
+ <body>
+    <div class="lists">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu0IOulMyD7Plknwh6bfZA49Lk7y2vqA_QjA&s" alt="beautiful forest image">
+        <div class="list">forest
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quia culpa dignissimos officia voluptatem necessitatibus similique? Quas amet deleniti assumenda provident voluptatum molestiae exercitationem laboriosam odit quia tempora. Omnis, repudiandae.
+        </div>
+        <div class="list " >two Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id dolore sit ipsam consequuntur molestiae quam autem sint neque placeat nulla sapiente quae voluptas incidunt repudiandae alias corrupti consequatur recusandae eius suscipit iure earum ad, sequi magni quos! Repellat voluptate aliquam commodi delectus consectetur, cupiditate aliquid veniam dolorem sunt, illo numquam itaque voluptatem? Reiciendis asperiores perspiciatis eos incidunt quam, sequi, repellat vel necessitatibus nostrum facere tempore omnis eveniet iure enim itaque ab, dolorem placeat fugit? Dolorem quae porro natus eum dolores nobis ad, fugiat non, quas ullam, iste vel at. Provident atque similique dolorum vel quae ab aperiam qui quas fugiat?</div>
+        <div class="list clean">three Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ut architecto veniam facilis inventore ea accusantium nulla commodi exercitationem mollitia? Fuga in aspernatur hic, quasi, molestias culpa id illo, perspiciatis sed illum consequatur asperiores magnam. Quod, eveniet velit. Ullam recusandae rerum quod fugit quis veritatis saepe sunt enim ea velit non aliquid eveniet at totam nulla nam vitae dolor, deserunt voluptatum? Excepturi voluptatum, expedita numquam officiis hic optio quidem quaerat molestias earum eum necessitatibus, ducimus pariatur voluptatibus aut doloribus ex veniam suscipit maiores. Nisi commodi eius optio quia temporibus nesciunt officiis iste eligendi tempora vitae voluptatum consequatur voluptas totam, eos molestiae! Facilis earum deserunt ab repellat quidem blanditiis nemo ut minus magni, quas sed neque, ipsa esse ullam saepe ipsum ratione quam odit, ipsam labore reprehenderit? Aliquam accusamus iure perspiciatis, est dolorem consequatur similique soluta dolores ut. Unde inventore pariatur doloremque ratione similique nobis provident facilis nisi fugit delectus culpa quam laboriosam, vero sit eum optio vitae quas perferendis tempore est facere? Repellat accusamus perspiciatis ab, non quidem autem quia quae ipsam quas assumenda. Quae culpa iure earum pariatur aspernatur ex sunt commodi sequi veniam perferendis, unde tempore numquam error rem debitis atque, vitae, quisquam impedit tenetur! Aliquam, sequi illum?</div>
+        
+    </div>
+ </body>
+ </html>
+
+
+ <!-- avoid using float and clear, we learned this just for the understanding
+use flexbox instead
+-->

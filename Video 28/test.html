@@ -1,0 +1,95 @@
+<!-- 
+9-10 0-5min✅
+10-11 5-10min✅
+11-12 10-15min✅
+12-1 15-20min✅
+1-2 20-25min✅
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .parent {
+            border: 2px solid;
+            margin: 10px;
+            padding: 10px;
+            height: 250vh;
+            /* position: absolute; */
+        }
+
+        .box {
+            border: 2px solid;
+            height: 15vh;
+            width: 80vw;
+            /* margin: 3px; */
+        }
+
+        .box1 {
+            background-color: aqua;
+            position: relative;
+            /* ➡️changed the posetion of of box1 from static to relevent */
+            bottom: -50px;   
+            left: 10px;
+            z-index: -1;
+            /* makes box1 go behind box2 */
+            /* z-index can be used to make an element appear above or below another element */
+
+        }
+
+        .box2 {
+            background-color: brown;
+
+            
+        }
+
+        .box3 {
+            background-color: blueviolet;
+            position: absolute;
+            top: 0px;
+            /* ➡️when we make posetion absolute,
+            then it will change on the reloation to its nearest absolute poetion parent, but if it did'nt find one, it will change in relation to html, check for yourself by maaking the parent div haveing any position other then static  
+            ⭐there will be space for margin if it is not 0
+            ❗ Exception: transform, filter, or perspective properties can also make an element appear as positioned 
+            transform: translate(0);
+            filter: invert(0);
+            perspective: 0em;
+            */
+        }
+        .box4{
+            background-color: darksalmon;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            /* ➡️fixed position makes the element fixed and will stay at its posetion even if the page is scrolled */
+        }
+        .box5{
+            background-color: gold;
+            position: sticky;
+            top: 5px;
+            /* ➡️if the posetion is sticky, then the element will stick to the page if you scroll down */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box box1">box1</div>
+        <div class="box box2">box2</div>
+        <div class="box box3">box3</div>
+        <div class="box box4">box4 <p>this box is fixed here</p></div>
+        <div class="box box5">box5 <p>I will stick to this page, if you scroll :)</p></div>
+
+    </div>
+</body>
+
+</html>

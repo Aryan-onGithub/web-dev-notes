@@ -1,0 +1,64 @@
+<!-- 
+0-5 3-4✅
+512 4-5
+ -->
+
+
+ <!-- watch demo.html file for better understanding -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container {
+            border: 2px solid;
+            width: 80vw;
+            height: 80vh;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            width: 50px;
+            background-color: aqua;
+            border: 2px solid;
+            /* margin: 20px; */
+            transform: rotate(40deg); 
+            /* rotated the box by 40 degree */
+            /* or use rotate(0.111turn)[1 turn= 360degree] */
+            transform: rotateX(40deg);
+            transform: rotateY(40deg);
+            transform: rotateZ(40deg);
+            transform: scale(1.5);
+            transform: scaleX(1.5);
+            transform: scaleY(1.5);
+            transform: scaleZ(1.5);
+            /* transform: scale3d(1.5); */
+            transform: skew(8deg, 20deg);
+            transform: translate(100%);
+            transform: translateY(100%);
+            /* transform: translateZ(100%);  */
+            transform: skew(40deg) translate(100%) translateY(100%);
+            
+            transform: rotate(40deg);
+            transform-origin: 0% 0%;
+            /* used if we want to rotate at a very pirticular point of the box */
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">Box</div>
+    </div>
+</body>
+
+</html>

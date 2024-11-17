@@ -1,0 +1,42 @@
+<!-- 
+4-5 0-5✅
+5-6 5-13
+ -->
+<!-- shadows and outline -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one {
+            border: 2px solid;
+            padding: 23px;
+            box-shadow: 10px 10px 5px lightblue;
+            /* ➡️this way you can create shadow */
+            /* ⭐tip: change shadow in inspect and copy its syntes, esypsy */
+            text-shadow: 2px 2px 3px grey;
+
+            /* ➡️this way you can create text shadow */
+        }
+        .two {
+            margin-top: 40px;
+            padding: 23px;
+            border: 2px solid red;
+            outline: 2px solid;
+            border-radius: 1cm;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one">i have a shadow</div>
+    <div class="two">this is an outline
+        <p>Outlines don't take up space, they're drawn around the element, outside of any border</p>
+        <p>to curve an outline u need to curve the border first, as it fallows border</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+.container{
+    height: 50vh;
+    width: 50vw;
+    border: 2px solid red;
+    background-color: aqua;
+}
+.container2{
+    height: 50vh;
+    width: 50vw;
+    border: 2px solid red;
+    background-image: url(thoseDays.png);
+    background-position: center center;
+    background-size:contain;
+    /* if we set image as background then it can not be downloaded easily by noobs */
+    background-repeat: no-repeat;
+    /* image starts repating so we use this */
+    background-repeat: repeat-x;
+    /* we can also define which axis repeat should work x/y */
+    
+}
+
+img{
+height: 50vh;
+width: 50vw;
+object-fit: cover;
+/* cover the height and width of image without shrinking or stretching image 
+by cropping both the sides*/
+object-position:center left;
+/* this way we can define wihich part should be vidible
+top/center/bottom right/left/center 
+*/
+object-fit: contain;
+/* changes image size for it to get inside the defined height and width */
+object-fit: fill;
+/* will stretch the image so that it fits in height width */
+
+object-position: 20px 10px;
+/* we can set distance from left and top for image */
+
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="thoseDays.png" alt="">
+    </div>
+    <div class="container2"></div>
+</body>
+</html>
+
+<!-- there is also a background-clip property you can check MDN referance if you wanna check more  -->

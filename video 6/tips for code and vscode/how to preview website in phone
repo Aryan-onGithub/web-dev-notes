@@ -1,0 +1,14 @@
+steps:
+1) hover and right click on windows icon, open terminal
+2) type ipconfig
+3) in "Wireless LAN adapter WiFi:"
+   copy your IPv4 address
+4)now go in your vs code settings and type live preview
+  switch to work space and scroll till you find "Live Preview: Host IP"
+  "the local IP host address to host your file on"
+5) now change that address to the IPv4 address you copied
+then restart your vscode
+6) make sure that your wifi is set to private network instead of public, you can do this by going to wifi propertys
+
+-now when you will check priview of you website in vscode, itwill show you your website ip address
+you can use this ip address to access the website on your phone by simply typing the ip address(not the full link but just the ip address eg: 192.168.29.17:3000)

@@ -1,0 +1,114 @@
+<!--after
+8am 0-5min✅
+9am 5-10min✅ 
+10am 10-15min✅
+11am 15-20min ✅0
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* use least specific selectors, so it makes it easy to overwrite them */
+
+        * {
+            color: blue;
+        }
+
+        /* universal */
+        div {
+            color: red !important;
+        }
+
+        /* element */
+        .test {
+            color: green
+        }
+
+        /* class */
+        [data-a='5'] {
+            color: blue;
+        }
+
+        /* attribute */
+        #fake {
+            color: purple
+        }
+
+        /* id */
+
+        pre {
+            color: red;
+            color: yellow;
+            color: green;
+        }
+
+        code {
+            background-color: rgb(243, 231, 231);
+            color: black;
+        }
+
+        /* The specificity of this selector is 1(id) + 10(class) + 10(class) + 10(attribute) + 10(pseudo class) = 41  */
+        a.harryclass.rohan-class[href]:hover {
+            color: blueviolet;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h2>
+        cascade algo tells us:
+    </h2>
+    <div style="line-height: 200%;">
+        
+        <ol>
+            <li>
+                last selector will win if all are of same type
+                
+            </li>
+            <li>
+                specifity:
+                inline style > id selector > class or attribute selector > element selector > universal selector
+                
+            </li>
+            <li>
+                origen: if no style is applied then some default style from browser will be used, but can be overide with any selectors
+                
+            </li>
+            <li>
+                
+                !important:
+                if you write !important after any selectors, then their porperty will be applied
+                <br>eg:-  <code> color: red!important; </code>
+            </li>
+        </ol>
+    </div>
+        
+        
+        
+        you can comment out CSS code related to this div and see for yourself
+    <div id="fake" class="test" data-a="5" style="color: orange;">test</div>
+    <p>
+    <h1>specificity calculater</h1>
+    <ul>
+        <li>universel selector = 0</li>
+        <li>element selector = 1 </li>
+        <li>class/attribute/pseudo class = 10</li>
+        <li>id selector = 100</li>
+        <li>inline style = 1000</li>
+        <li>!important = 10,000</li>
+        add the value of all the part in the selector
+        <pre>eg:
+                h1{} = 1
+                .yello{} = 10
+                h1.yello{} = 10+1 =11
+            </pre>
+    </ul>
+    </p>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!-- 
+0-5✅
+5-10✅
+-->
+<!-- 10-17 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+.container{
+background-color: aqua;
+height: 60vh;
+width: 60vw;
+}
+.box{
+/* background-color: black; */
+height: 50px;
+width: 50px;
+animation-name: AryanKaAnimation;
+animation-duration: 3s;
+animation-iteration-count: 3;
+/* how many times the animation will be repeated, can also set to infinite */
+animation-timing-function: cubic-bezier(0, 0.96, 0.84, 0.76);
+/* just modified in-out from inspect mode */
+/*ease easein easeinout easeout */
+animation-delay: 1s;
+/* animation will start after 1s */
+animation-direction: alternate-reverse;
+/* we can set directin of animation */
+animation-play-state:paused ;
+/* pause the animation */
+animation-play-state:running;
+/* play animation from paused location */
+
+/* we can also do all this in 1 function */
+/* animation: name duration timing-function delay iteration-count direction fill-mode; */
+animation: AryanKaAnimation 2s ease-in 2s 1 forwards;
+/* we can also miss propertys but it will still work */
+/* fill-mode: forwards(animation retains its "To" ptopertys), backwords (opposite of forwards) */
+
+/* animation:AryanKaAnimation 2s ease-in 4s 1 forwards, aryan2 2s ease-in 4s 1; */
+}
+/* we need to write keyframe then animationname */
+@keyframes AryanKaAnimation{
+    from{
+        background-color: red;
+    }
+    to{
+        transform: translateX(400px);
+        background-color: yellow;
+    }
+}
+
+@keyframes aryan2{
+    0%{ transform: rotate(50deg);}
+    20%{ transform: rotate(100deg);}
+    40%{ transform: rotate(150deg);}
+    60%{ transform: rotate(200deg);}
+    80%{ transform: rotate(250deg);}
+    100%{ transform: rotate(300deg);}
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
+
+<!-- for simple animation we can use transition peroperty,
+but for complex animations we should use animation property -->

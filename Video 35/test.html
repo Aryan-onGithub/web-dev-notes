@@ -1,0 +1,95 @@
+<!-- 
+0-5 11-12✅
+5-13 12-1✅
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on css selectors</title>
+    <style>
+        .box:first-child {
+            background-color: aqua;
+        }
+
+        .first::first-line {
+            color: red;
+        }
+
+        .boxes * {
+            border: 2px solid;
+            /* select  all elements inside boxes class at once */
+        }
+
+        [data-color="prime"] {
+            margin-top: 50px;
+        }
+
+        /* this is an example of attribute selector */
+
+        h1,
+        p,
+        span {
+            background-color: red;
+        }
+
+        /* this way we can group selectors */
+
+        .box:nth-child(even) {
+            background-color: blue;
+        }
+
+        /* if the nth child of .box(whis have 3 div)is even */
+
+        .box:nth-last-child(2) {
+            /* background-color: green; */
+            color: white;
+        }
+
+        /* last second child of box class which has 3 div */
+        .boxes::before{
+           content: "Aryan is good";
+        }
+        /* this way we can insert elements dynammically through css */
+        .boxes::after{
+            content: "sigma web dev is also good";
+        }
+            
+        ::selection{
+            color: greenyellow;
+            background-color: black;
+        }
+        /* when we select text in the css page, test using mouse */
+
+        input::placeholder{
+            background-color: black;
+            color: greenyellow;
+        }
+        /* jo chahe we select kro yrr */
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div class="box first"> i am a box Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, suscipit?
+            Cum error asperiores cumque ipsa nobis ratione magnam sint blanditiis dignissimos quod repudiandae nesciunt
+            culpa minima, dicta ex, perspiciatis, vero qui quis placeat facilis ea. Placeat minima earum beatae magni
+            quasi, exercitationem sequi ea a, corporis eaque pariatur sapiente enim cupiditate quaerat esse nam quo
+            asperiores!</div>
+        <div class="box" data-color="prime"> i am a box</div>
+        <div class="box"> i am a box
+            <h1>hello</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, autem. Quibusdam inventore quidem sit
+                consequuntur reprehenderit, ab laudantium excepturi aut esse, vel iusto odio commodi, nobis debitis
+                harum quam earum!</p>
+            <span>1242y485y2y2y525y25y25</span>
+        </div>
+        <input type="text" placeholder="type your name here">
+    </div>
+</body>
+
+</html>
+
+<!-- some of the sudo selectors are experemental, dont use them, u can chack that by hovering over them, there are meny more selectos, explore them, dont try to memorise every thing brah -->

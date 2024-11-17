@@ -1,0 +1,84 @@
+<!-- 12-1 0-5min✅
+1-2 5-10min✅
+11-12 10-15min✅
+12-1 15-20min ✅
+1-2   20-26min ✅
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0%;}
+        body{background-color: grey;}
+
+        html{font-size: 10px;}  
+        /* html is a root element */
+
+        .box1{
+            border: 2px solid;
+            background-color: rgb(4, 105, 105);
+            width: 80vw;
+             /*➡️ vw= viewpoint width */
+            margin: auto;
+             /* give margin equally both sides so it come in middle */
+            /* this works because div is a block element this shit soent work over inline elements */
+            font-size: 20px;
+        }
+
+        .box2{
+            margin-top: 20px;
+            /* height: 80vh; */
+            /*➡️ vh= viewpoint height */
+            min-height: 80vh;
+            /* if there is nothing inside then also this will be its min height, if we only take height rether then min height, then the height will be fixed and once the content inside it becomes too much it will overflow */
+            /*➡️ same way we can use 
+              min-width
+              max-width
+              min-height
+              max-height
+            */
+        }
+
+        .box1 p{
+            font-size: 2em; /* or rem*/
+             /*➡️ em gives = em*(its parent class font size/or inherited)
+            eg:    if default is 10px
+                    font-size: 1.5em;
+                    font will be = 15px  */
+            
+            /* on the other hand,➡️ rem is a unit used to multiply the fontsize base on the root element(html)it wont follow parent size, or nothing changes if the root element is not given */
+        }
+        .box3{
+            background-color: bisque;
+            font-size: 22px;
+
+            /*➡️ vmin shorter side either height or width */
+            /*➡️ vmax longer side either height or width */
+            /* vmin in pc is height and in phone is width
+            vmax in pc is width and in phone is height */
+            /* this looks stupid/shitty but trust me this is not that thought to understans */
+
+            width: 100vmax;
+            /* vmax=vw */
+            height: 100vmin;
+            /* vmin=vh */
+            /* this shit units are same in pc */
+        }
+        
+        /* % is also a unit and is described in percent.html for better understanding */
+
+    </style>
+</head>
+<body>
+    <div class="box1">i dont fuckin understand this</div>
+    <div class="box1 box2"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, eligendi repellat, voluptas officiis eius vero a provident commodi deserunt quibusdam magnam velit!</p>
+    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nobis labore ex alias, minima esse, suscipit, aliquid in voluptatibus ipsum maiores iusto illo corporis nihil dicta! Optio quidem fugit asperiores obcaecati doloremque, dicta reiciendis? Veritatis cum vero quibusdam sequi, laborum eaque, culpa doloremque accusantium et sed veniam. In impedit ducimus esse sequi, placeat nesciunt delectus ratione neque optio minima hic qui? Sequi molestiae rem delectus doloribus. Nisi quos corporis impedit quisquam repudiandae enim vero debitis! Tempore incidunt provident animi quae! Aperiam eos recusandae vitae totam autem harum sit illo delectus ullam vero iure officia adipisci quae ipsam ducimus laudantium, incidunt, deserunt, sed ipsum ratione inventore eius! Reprehenderit architecto beatae, accusantium ut quibusdam consequuntur, quam rem iure, unde mollitia aspernatur magnam numquam et ullam aperiam dignissimos maxime placeat repellat pariatur aliquam vitae suscipit? Error sunt illum, nisi, laboriosam nulla dolore ipsam vero vel quasi quisquam incidunt ab animi totam numquam necessitatibus aliquid explicabo. Adipisci, iusto nam ipsam dolores quo laborum! Tempore quaerat voluptatem expedita reiciendis impedit, mollitia assumenda a cupiditate aspernatur quisquam? Eos unde cum repellendus libero, dolorem iusto sapiente fuga ratione, temporibus, dicta nisi aut. Officiis ut vel officia porro ducimus. Nihil quo, voluptate architecto ipsam aliquam repellat facilis placeat accusantium sequi debitis expedita, perferendis vero. Dignissimos minus necessitatibus pariatur sunt, hic excepturi ipsa fuga magni tempora praesentium optio, quis sint voluptatem nostrum aspernatur. Modi quod totam et reprehenderit obcaecati, sequi alias esse necessitatibus, dolor non optio accusantium similique quasi cupiditate possimus aspernatur. Hic aspernatur dolores minus facilis iure at impedit amet voluptas, possimus tempora tempore recusandae officia eaque animi sequi ipsam fugiat, doloremque, dicta voluptatibus! Possimus laboriosam atque saepe itaque nulla libero quae, et asperiores officiis quam quibusdam distinctio autem molestiae tempore illo, debitis pariatur soluta. Nihil beatae repellat minima illum omnis porro animi, saepe qui recusandae, provident autem ratione soluta eveniet. Non tempora placeat ipsa alias fugiat quibusdam ipsum animi consequuntur maiores nisi ad veritatis error nemo iste eius, ducimus aliquam exercitationem labore odit. Exercitationem tenetur excepturi nemo tempora dignissimos iusto ipsa, eos nostrum illum dicta blanditiis molestiae voluptate laborum commodi iste at labore magnam, perspiciatis atque id soluta nulla sit corrupti natus? Vitae blanditiis adipisci inventore id atque eligendi perspiciatis earum ex omnis. Assumenda minima consequatur excepturi illum aspernatur velit architecto dolorem repudiandae porro libero, recusandae facilis inventore ducimus, iste ratione laudantium consectetur aliquid culpa illo mollitia accusantium commodi dolores suscipit placeat. Nam commodi corporis cupiditate ipsum nemo deleniti repudiandae voluptas iste voluptate ratione animi quisquam iure, adipisci quibusdam illo unde, rem autem, accusamus distinctio alias nesciunt? Nihil tempora doloribus hic quibusdam ducimus libero cum saepe quis, enim sequi culpa nisi rem recusandae voluptatum ipsam veniam incidunt labore. At accusamus molestias, ipsam asperiores sed, maxime sapiente, omnis quibusdam vel unde ipsa. Rem at voluptas impedit eius suscipit neque provident asperiores explicabo culpa error reprehenderit, libero excepturi perferendis. Alias voluptate ipsum tenetur amet sequi pariatur! Rerum quia excepturi accusamus inventore labore, optio vel molestias, iusto nam ipsum corrupti ducimus accusantium quaerat reiciendis, doloribus vitae. Inventore, repellat expedita? Voluptatibus labore consequatur asperiores a repellendus reiciendis veniam aperiam dignissimos minima laboriosam ex impedit dolor aliquid, neque fugit assumenda omnis nihil harum maiores, repellat saepe mollitia atque! Adipisci nisi nobis deleniti atque non, amet commodi veritatis consectetur quis, alias est! Quisquam, corrupti dolorum! Pariatur quis dolor esse, earum dolores omnis explicabo odio dolore aperiam cumque ipsa magnam possimus laudantium harum fugiat obcaecati, placeat itaque commodi cupiditate ullam, soluta asperiores? Eveniet aliquid quasi, odio voluptas enim tempora dolor veritatis ab. Itaque, nam consectetur ea rerum possimus ipsa. Voluptatem hic quia officiis, assumenda possimus nesciunt impedit, minima doloribus in provident laborum eum omnis perspiciatis, reprehenderit aspernatur nobis iste perferendis repellendus error maxime. Quasi facilis magni ab voluptatem, tenetur alias sequi? Nisi, laboriosam dolor. Tempora error saepe laudantium nam provident, culpa perspiciatis architecto veniam, nesciunt necessitatibus, ullam autem dolor quas assumenda consectetur quidem eligendi maiores. Accusamus corporis incidunt a voluptates, dolorem quibusdam, enim, totam vero dolores molestias necessitatibus nemo vel quisquam hic consequatur nobis tempora? Sint placeat harum maxime maiores iusto laboriosam optio debitis at porro aliquam blanditiis earum eveniet eligendi repellendus, assumenda mollitia. Laboriosam nostrum, culpa accusantium enim autem ad? Quo distinctio recusandae aut autem eum quam at id sit dignissimos fugit. Maxime tempora amet repellendus ipsum asperiores debitis optio ipsam nostrum molestias delectus soluta, cupiditate doloribus laudantium modi vitae architecto quasi saepe qui dolor! Aperiam fugit vitae necessitatibus asperiores deserunt nostrum quaerat sequi consequuntur odio accusantium laudantium nam nobis sapiente perferendis quam, aliquid quos pariatur harum tenetur neque, suscipit maxime? Veritatis nostrum rerum ipsam, iste velit corrupti consectetur explicabo at mollitia non beatae aspernatur sit odio delectus voluptate voluptates facilis temporibus debitis id aperiam repellendus ipsa iusto sapiente? Modi eligendi veritatis voluptate hic assumenda ducimus itaque, quod vitae doloremque ipsum quas illo quia quidem perferendis eum recusandae? Ipsa, soluta. Dicta temporibus quis odit ipsum, animi mollitia pariatur vero repudiandae repellat ducimus nobis eveniet odio quam expedita quae sapiente obcaecati perferendis aut a ipsa sit consectetur. Nesciunt, culpa autem. Unde laboriosam at possimus exercitationem! Quas atque distinctio aliquam eos quod. Ratione, repudiandae nulla sit adipisci ad, facere tempore, exercitationem maxime soluta possimus dignissimos quod et neque odio tempora! Quis, laborum eveniet consectetur quod numquam obcaecati tempore molestiae quisquam nam modi. Natus temporibus officia consectetur consequatur hic numquam, velit quos cumque placeat explicabo exercitationem iure, pariatur distinctio dignissimos assumenda animi soluta? Aperiam veniam eaque sed voluptas quasi? Iure provident adipisci atque eligendi quia nemo, similique officia voluptates, ullam aut consequuntur illum! Ab ut repudiandae assumenda labore earum est ducimus dolores vel dolorum, minus harum ratione molestias commodi dignissimos quaerat eligendi non corporis nostrum expedita culpa reprehenderit odio recusandae repellendus similique! Explicabo nisi corporis repellendus repudiandae non pariatur debitis quod dolore adipisci. Doloribus voluptas dolor ducimus voluptatibus adipisci perferendis vel, odit error totam rem necessitatibus nobis molestiae possimus, quo dignissimos rerum voluptates, velit soluta. Omnis eos molestiae nulla temporibus debitis corrupti dolorem amet. Atque illo placeat praesentium corrupti officiis. Recusandae vero vitae asperiores magnam veniam expedita provident rerum, soluta, inventore est porro nam. Repudiandae commodi similique vel sit reiciendis tempore vero dolores error perspiciatis eligendi sequi libero temporibus et nulla id sunt excepturi autem sed illum unde blanditiis amet incidunt, pariatur expedita! Atque quo voluptatem dolorem modi dicta saepe excepturi optio repudiandae aliquam quaerat impedit sequi nam, magnam quod ipsam tempora, temporibus eveniet maxime facilis minima officia voluptatibus laboriosam facere distinctio. Sunt aliquid praesentium recusandae maiores in exercitationem tempore sit. Quae recusandae laudantium quo maiores blanditiis sunt molestiae possimus culpa delectus excepturi, cum praesentium, fugiat fugit nesciunt tempore omnis quas iusto eaque saepe minus hic eveniet ad explicabo. Fugit dolorum doloremque, laboriosam reiciendis autem eaque sed recusandae ducimus blanditiis. Nostrum, exercitationem, est, vitae voluptate nam placeat libero corporis quisquam reprehenderit deserunt a voluptatem labore earum itaque. Corrupti quaerat odio nesciunt deserunt nemo ducimus ullam vitae dicta nobis ipsa quisquam eos voluptate assumenda iure perferendis soluta veniam unde tenetur aperiam autem, nihil animi id enim? Porro exercitationem dolor distinctio doloremque inventore? Vitae atque perferendis aliquam, deleniti cupiditate ipsum quis quas alias. Sequi nostrum obcaecati, inventore corporis voluptatibus incidunt adipisci assumenda perspiciatis quis, illum minima doloribus corrupti sed dignissimos fugit eos. Necessitatibus fugiat, quam aut cum repudiandae distinctio dolores ipsum tenetur eius et suscipit a voluptates quia fugit. Vero labore esse veniam quaerat perferendis nemo consectetur voluptate provident id, animi ipsa nesciunt rerum ad et earum, quasi quos deleniti.</p> -->
+    </div>
+    <div class="box3">
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units">some other units, that are not used very often(not mendatory to read, chill kr yrr)</a>
+    </div>
+</body>
+</html>

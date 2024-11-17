@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style0.css">
+</head>
+
+<body>
+    <!-- You are given 12 files; 6 audio and 6 video.
+    Design a website using HTML only which shows these 12 files.
+    1.mp3, 2.mp3 .... 6.mp3
+    1.mp4, 2.mp4 .... 6.mp4 -->
+    <header>
+        <nav>
+            <h1> video and audio files</h1>
+        </nav>
+    </header>
+    <main>
+        <table border="">
+            <tr>
+                <th>Audio
+                </th>
+                <td>
+                <td><img src="img1.jpeg" width="300" alt="img1"></td>
+                <td><img src="img2.jpeg" width="300" alt="img2"></td>
+                <td><img src="img3.jpeg" width="300" alt="img3"></td>
+                <td><img src="img4.jpeg" width="300" alt="img4"></td>
+                <td><img src="img5.jpeg" width="300" alt="img5"></td>
+                <td><img src="img6.jpeg" width="300" alt="img6"></td>
+                </td>
+            </tr>
+            <tr>
+                <th>Video</th>
+                <td>
+                <td><video src="vid1.mp4" width="300" autoplay loop muted></video></td>
+                <td><video src="vid2.mp4" width="300" autoplay loop muted></video></td>
+                <td><video src="vid3.mp4" width="300" autoplay loop muted></video></td>
+                <td><video src="vid4.mp4" width="300" autoplay loop muted></video></td>
+                <td><video src="vid5.mp4" width="300" autoplay loop muted></video></td>
+                <td><video src="vid6.mp4" width="300" autoplay loop muted></video></td>
+                </td>
+            </tr>
+        </table>
+    </main>
+
+    <footer>
+        <form action="post">
+            <label for="like">how much you like these images</label>
+            <input type="range" value="like">
+            <label for="vidlike">how much you like these videos
+            </label>
+            <input type="range" value="vidlike">
+
+            <label for="image">whats your favourit image</label>
+            <select name="image" id="fevimage">
+                <option value="1">img1</option>
+                <option value="2">img2</option>
+                <option value="3">img3</option>
+                <option value="4">img4</option>
+                <option value="5">img5</option>
+                <option value="6">img6</option>
+            </select>
+                
+
+    <label for="vid">whats your favourit video</label>
+    <select name="vid" id="fevvideo">
+        <option value="v1">vid1</option>
+        <option value="v2">vid2</option>
+        <option value="v3">vid3</option>
+        <option value="v4">vid4</option>
+        <option value="v5">vid5</option>
+        <option value="v6">vid6</option>
+    </select>
+<input type="submit">
+    
+</form>
+<h1>I got these stock media files form this website</h1>
+<div>
+    <a href="https://www.pexels.com/videos/">Pexels</a>
+
+</div>
+<iframe src="https://www.pexels.com/videos/" frameborder="0" width="1500" height="500"></iframe>
+    </footer>
+
+</body>
+
+</html>

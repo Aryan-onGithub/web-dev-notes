@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="document">
+        hi aryan
+    </div>
+    <script>
+let div = document.createElement("div")
+div.setAttribute("class", "created")
+div.innerHTML = "hi aryan i am created by java script"
+document.querySelector(".document").append(div)
+// document.querySelector(".document").prepend(div)
+// document.querySelector(".document").after(div)
+// document.querySelector(".document").before(div) 
+document.body.insertAdjacentHTML("afterbegin", "<h1> Hi I am under the water, Please help me!! here too much raining....")
+document.body.insertAdjacentText    
+    </script>
+</body>
+</html>
+<!-- 
+to insert text => insertAdjacentText   
+to insert html => insertAdjacentHTML
+to insert element => createElement then append/prepend/after/before
+ -->
+
+ <!-- .remove removes the element  -->
+
+ <!-- .classlist gives the clas list of the given element   -->
+  <!-- classname gives the lsit in just a string form  -->
+
+  <!-- classlist.add use to add more classes to the given element  -->
+  <!-- classlist.remove vise versa   -->
+
+  <!-- cclasslist.toggle if clase is present then remove it, if not then add it -->
